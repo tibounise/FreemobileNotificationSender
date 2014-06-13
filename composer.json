@@ -1,0 +1,22 @@
+{
+	"name":"tibounise/freemobilenotificationsender",
+	"description":"Add SMS notifications using Free Mobile to your PHP projects",
+	"license":"MIT",
+	"keywords":["free mobile","sms","api"],
+	"require":{
+		"php":">=5.4.0"
+	},
+	"authors":[
+		{
+			"name":"Jean THOMAS",
+			"email":"contact@tibounise.com",
+			"homepage":"http://tibounise.com",
+			"role":"Developper"
+		}
+	],
+	"autoload":{
+		"psr-0":{
+			"FreemobileNotificationSender":"."
+		}
+	}
+}
