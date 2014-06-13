@@ -15,7 +15,7 @@ Copy the `config.example.php` file in order to edit it :
 cp config.example.php config.php
 ```
 
-Then edit config.php to match your API's credentials. Once everything is set, run `testapi.php`.
+Then edit config.php to match your API's credentials. Once everything is set, run `testapi.php`. You should receive a 160-characters SMS.
 
 ## Donate
 

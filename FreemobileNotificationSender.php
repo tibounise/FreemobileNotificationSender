@@ -1,9 +1,35 @@
 <?php
 
+/**
+ * FreemobileNotificationSender is a great way to add SMS notifications
+ * using Free Mobile's API to your PHP projects
+ *
+ * See testapi.php for a demo
+ *
+ * @package FreemobileNotificationSender
+ * @author Jean THOMAS <contact@tibounise.com>
+ * @access public
+ * @version 1.1
+ */
 class FreemobileNotificationSender {
+	/**
+	 * Free Mobile API URL, may have to be changed in future versions
+	 */
 	const api_url = 'https://smsapi.free-mobile.fr/sendmsg';
 
+	/**
+	 * Serves to identify the user.
+	 * 
+	 * @access protected
+	 * @var string $_user_id User id
+	 */
 	protected $_user_id;
+	/**
+	 * Authentify the user
+	 * 
+	 * @access protected
+	 * @var string $_api_key API key
+	 */
 	protected $_api_key;
 
 	public function __construct($user_id,$api_key) {
@@ -13,6 +39,12 @@ class FreemobileNotificationSender {
 		return $this;
 	}
 
+	/**
+	 * Sends a message
+	 *
+	 * @param string $message The message to send
+	 * @access public
+	 */
 	public function sendMessage($message) {
 		if (strlen($message) > 160) {
 			throw new InvalidArgumentException('Message too long');
