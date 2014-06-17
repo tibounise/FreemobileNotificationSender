@@ -86,7 +86,7 @@ class FreemobileNotificationSender {
 			break;
 
 		case 402:
-			throw new OverflowException('Too much SMS sent in a short period of time');
+			throw new OverflowException('Too many messages sent in a short period of time');
 			return false;
 			break;
 
