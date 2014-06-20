@@ -46,10 +46,6 @@ class FreemobileNotificationSender {
 	 * @access public
 	 */
 	public function sendMessage($message) {
-		if (strlen($message) > 160) {
-			throw new InvalidArgumentException('Message too long');
-		}
-
 		$query = http_build_query(array(
 			'user' => $this->_user_id,
 			'pass' => $this->_api_key,
