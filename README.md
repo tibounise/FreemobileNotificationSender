@@ -31,6 +31,6 @@ If you are using Packagist to maintain your project's dependencies, you can use 
 
 If you're using Laravel, you may consider using [aeyoll's](https://github.com/aeyoll) FNS wrapper, available [here](https://github.com/aeyoll/laravel-free-mobile-notification-sender).
 
-## Donate
+## Support me !
 
 If this project helped you a lot, please consider donating : [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K65LZXQXASC8E) or [Bitcoin](https://blockchain.info/address/13XFkvDBm8iqbwVC1egYZ8sCSu72eebJ7N).
