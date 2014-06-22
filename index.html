@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Freemobile notification sender by tibounise</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Freemobile notification sender</h1>
+        <p>Add SMS notifications using Free Mobile to your PHP projects</p>
+        <p class="view"><a href="https://github.com/tibounise/FreemobileNotificationSender">View the Project on GitHub <small>tibounise/FreemobileNotificationSender</small></a></p>
+        <ul>
+          <li><a href="https://github.com/tibounise/FreemobileNotificationSender/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/tibounise/FreemobileNotificationSender/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/tibounise/FreemobileNotificationSender">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="freemobilenotificationsender-fns" class="anchor" href="#freemobilenotificationsender-fns"><span class="octicon octicon-link"></span></a>FreemobileNotificationSender (FNS)</h1>
+
+<p>FreemobileNotificationSender (FNS, for short) is a simple PHP class to allow people to send SMS notifications using Free's APIs.</p>
+
+<h2>
+<a name="setup" class="anchor" href="#setup"><span class="octicon octicon-link"></span></a>Setup</h2>
+
+<p>Firstly, you will need to setup your Free Mobile account to enable the SMS API. You will also find on Free Mobile's website the credentials you need to use the API.</p>
+
+<h2>
+<a name="test-the-api" class="anchor" href="#test-the-api"><span class="octicon octicon-link"></span></a>Test the API</h2>
+
+<p>Copy the <code>config.example.php</code> file in order to edit it :</p>
+
+<pre lang="shell"><code>cp config.example.php config.php
+</code></pre>
+
+<p>Then edit config.php to match your API's credentials. Once everything is set, run <code>testapi.php</code>. You should receive a 160-characters SMS.</p>
+
+<h2>
+<a name="integrating-fns-in-your-own-applications" class="anchor" href="#integrating-fns-in-your-own-applications"><span class="octicon octicon-link"></span></a>Integrating FNS in your own applications</h2>
+
+<p>If you are using Packagist to maintain your project's dependencies, you can use it to embed an updated version of FNS. Simply add this in your <em>composer.json</em> file :</p>
+
+<div class="highlight highlight-json"><pre><span class="p">{</span>
+  <span class="nt">"require"</span><span class="p">:{</span>
+    <span class="nt">"tibounise/freemobilenotificationsender"</span><span class="p">:</span><span class="s2">"1.*"</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>If you're using Laravel, you may consider using <a href="https://github.com/aeyoll">aeyoll's</a> FNS wrapper, available <a href="https://github.com/aeyoll/laravel-free-mobile-notification-sender">here</a>.</p>
+
+<h2>
+<a name="support-me-" class="anchor" href="#support-me-"><span class="octicon octicon-link"></span></a>Support me !</h2>
+
+<p>If this project helped you a lot, please consider donating : <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=K65LZXQXASC8E">PayPal</a> or <a href="https://blockchain.info/address/13XFkvDBm8iqbwVC1egYZ8sCSu72eebJ7N">Bitcoin</a>.</p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/tibounise">tibounise</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
