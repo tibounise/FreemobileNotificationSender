@@ -46,6 +46,7 @@ class FreemobileNotificationSender {
 	 * @access public
 	 */
 	public function sendMessage($message) {
+		$message = preg_replace("/(\n\r|\n)/","\r",$message);
 		$query = http_build_query(array(
 			'user' => $this->_user_id,
 			'pass' => $this->_api_key,
